@@ -1,6 +1,9 @@
 <template>
-  <div id="app">
-    <transition name="slide" mode="out-in">
+  <div id="app" style="overflow-x: hidden;">
+    <transition 
+    enter-active-class="animate__animated animate__fadeInRight"
+    leave-active-class="animate__animated animate__fadeOutLeft"
+    mode="out-in">
       <router-view></router-view>  
     </transition>
   </div>
@@ -36,29 +39,29 @@ $theme-colors: map-merge($theme-colors, (
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/tables";
+//@import "../node_modules/bootstrap/scss/tables";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/transitions";
-@import "../node_modules/bootstrap/scss/dropdown";
-@import "../node_modules/bootstrap/scss/button-group";
+//@import "../node_modules/bootstrap/scss/dropdown";
+//@import "../node_modules/bootstrap/scss/button-group";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/card";
-@import "../node_modules/bootstrap/scss/accordion";
-@import "../node_modules/bootstrap/scss/breadcrumb";
-@import "../node_modules/bootstrap/scss/pagination";
+//@import "../node_modules/bootstrap/scss/accordion";
+//@import "../node_modules/bootstrap/scss/breadcrumb";
+//@import "../node_modules/bootstrap/scss/pagination";
 @import "../node_modules/bootstrap/scss/badge";
-@import "../node_modules/bootstrap/scss/alert";
-@import "../node_modules/bootstrap/scss/progress";
-@import "../node_modules/bootstrap/scss/list-group";
+//@import "../node_modules/bootstrap/scss/alert";
+//@import "../node_modules/bootstrap/scss/progress";
+//@import "../node_modules/bootstrap/scss/list-group";
 @import "../node_modules/bootstrap/scss/close";
-@import "../node_modules/bootstrap/scss/toasts";
+//@import "../node_modules/bootstrap/scss/toasts";
 @import "../node_modules/bootstrap/scss/modal";
-@import "../node_modules/bootstrap/scss/tooltip";
-@import "../node_modules/bootstrap/scss/popover";
+//@import "../node_modules/bootstrap/scss/tooltip";
+//@import "../node_modules/bootstrap/scss/popover";
 @import "../node_modules/bootstrap/scss/carousel";
-@import "../node_modules/bootstrap/scss/spinners";
+//@import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/offcanvas";
 @import "../node_modules/bootstrap/scss/placeholders";
 
@@ -67,20 +70,4 @@ $theme-colors: map-merge($theme-colors, (
 
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
-
-//Extra
-.slide-enter-active, .slide-leave-active {
-  transition: transform .5s;
-}
-.slide-enter {
-  transform: translateX(100%);
-}
-
-.slide-leave-to {
-  transform: translateX(-100%);
-}
-
-.slide-enter-to, .slide-leave {
-  transform: translateX(0);
-}
 </style>

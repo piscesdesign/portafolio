@@ -2,7 +2,13 @@
   <div>
     <NavBar :isHome="true"></NavBar>
     <div class="w-100 vh-100 bg-primary">
-      
+      <div class="container h-100 d-flex alig-items-center">
+        <div class="vh-100 row justify-content-center align-items-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="@/assets/home-logo.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

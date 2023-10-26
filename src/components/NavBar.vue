@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg py-3" :class="[isHome ? 'bg-primary' : 'bg-white border-bottom']">
+    <nav class="navbar navbar-expand-lg fixed-top py-3" :class="[isHome ? 'bg-primary' : 'bg-white border-bottom']">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
