@@ -1,17 +1,20 @@
 <template>
-  <div class="home">
-    <h1 class="text-center text-tertiary">HOLA MUNDO</h1>
+  <div>
+    <NavBar :isHome="true"></NavBar>
+    <div class="w-100 vh-100 bg-primary">
+      
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import NavBar from '@/components/NavBar.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    NavBar
   }
 }
 </script>

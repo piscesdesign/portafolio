@@ -1,47 +1,86 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <transition name="slide" mode="out-in">
+      <router-view></router-view>  
+    </transition>
   </div>
 </template>
 
 <style lang="scss">
   
-  // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-  @import "../node_modules/bootstrap/scss/functions";
-  
-  // 2. Include any default variable overrides here
-  $primary: #f3142e;
-  $secondary: #f54358;
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
 
-  // 3. Include remainder of required Bootstrap stylesheets
-  @import "../node_modules/bootstrap/scss/variables";
+// 2. Include any default variable overrides here
+$primary: #f3142e;
+$secondary: #f54358;
 
-  // 4. Include any default map overrides here
-  // Create your own map
-  $theme-colors: map-merge($theme-colors, (
-    "tertiary": #fb4e4e
-  ));
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
 
-  // 5. Include remainder of required parts
-  @import "../node_modules/bootstrap/scss/maps";
-  @import "../node_modules/bootstrap/scss/mixins";
-  @import "../node_modules/bootstrap/scss/root";
+// 4. Include any default map overrides here
+// Create your own map
+$theme-colors: map-merge($theme-colors, (
+  "tertiary": #fb4e4e
+));
 
-  // 6. Optionally include any other parts as needed
-  @import "../node_modules/bootstrap/scss/utilities";
-  @import "../node_modules/bootstrap/scss/reboot";
-  @import "../node_modules/bootstrap/scss/type";
-  @import "../node_modules/bootstrap/scss/images";
-  @import "../node_modules/bootstrap/scss/containers";
-  @import "../node_modules/bootstrap/scss/grid";
-  @import "../node_modules/bootstrap/scss/helpers";
+// 5. Include remainder of required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
 
-  // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-  @import "../node_modules/bootstrap/scss/utilities/api";
+// Layout & components
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/placeholders";
 
-  // 8. Add additional custom code here
+// Helpers
+@import "../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+//Extra
+.slide-enter-active, .slide-leave-active {
+  transition: transform .5s;
+}
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+
+.slide-enter-to, .slide-leave {
+  transform: translateX(0);
+}
 </style>
