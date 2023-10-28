@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-3" :class="[isHome ? 'bg-tertiary' : 'bg-white']">
         <div class="container">
-            <button type="button" class="btn btn-link ms-auto d-block d-lg-none" :class="[isHome ? 'text-white' : 'text-tertiary']" @click="toggle()">
+            <button type="button" class="btn btn-link ms-auto d-block d-lg-none" :class="[isHome ? 'text-white' : 'text-tertiary']" @click="open()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
                     <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
                 </svg>
@@ -37,18 +37,18 @@ export default {
     name: 'NavBar',
     props: ['isHome'],
     methods: {
-        toggle() {
+        open() {
             let offcanvas = document.getElementById('offcanvas');
-            if(offcanvas)
+            if(offcanvas && !offcanvas.classList.contains('show'))
             {
-                offcanvas.classList.toggle('show');
+                offcanvas.classList.add('show');
             }
 
             let offcanvasBack = document.getElementById('offcanvas-backdrop');
-            if(offcanvasBack)
+            if(offcanvasBack && !offcanvasBack.classList.contains('show'))
             {
-                offcanvasBack.classList.toggle('d-none');
-                offcanvasBack.classList.toggle('show');
+                offcanvasBack.classList.remove('d-none');
+                setTimeout(() => offcanvasBack.classList.add('show'));
             }
             
         }

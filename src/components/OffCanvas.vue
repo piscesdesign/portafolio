@@ -2,7 +2,7 @@
     <div>
         <div class="offcanvas offcanvas-end" :class="[!isHome ? 'bg-tertiary' : '']" id="offcanvas">
             <div class="offcanvas-header">
-                <button type="button" class="btn-close ms-auto"  aria-label="Close" @click="toggle()"></button>
+                <button type="button" class="btn-close ms-auto"  aria-label="Close" @click="close()"></button>
             </div>
             <div class="offcanvas-body">
                 <div class="h-100 d-flex align-items-center">
@@ -29,6 +29,7 @@
                 </div>
             </div>
         </div>
+        <div class="offcanvas-backdrop fade d-none" id="offcanvas-backdrop" @click="close()"></div>
     </div>
 </template>
 
@@ -37,26 +38,34 @@ export default {
     name: 'OffCanvas',
     data() {
         return {
-            isHome: false,
-            showed: false
+            isHome: false
         }
     },
     methods: {
-        toggle() {
+        close() {
             let offcanvas = document.getElementById('offcanvas');
-            if(offcanvas)
+            if(offcanvas && offcanvas.classList.contains('show'))
             {
-                offcanvas.classList.toggle('show');
+                offcanvas.classList.add('hiding');
+                setTimeout(() => {
+                    offcanvas.classList.remove('hiding');
+                    offcanvas.classList.remove('show');
+                }, 900)
             }
 
             let offcanvasBack = document.getElementById('offcanvas-backdrop');
-            if(offcanvasBack)
+            if(offcanvasBack && offcanvasBack.classList.contains('show'))
             {
-                offcanvasBack.classList.toggle('show');
-                offcanvasBack.classList.toggle('d-none');
+                offcanvasBack.classList.remove('show');
+                setTimeout(() => offcanvasBack.classList.add('d-none'), 900);
             }
             
         }
-    }
+    },
+    watch:{
+        $route(to, from){
+            this.close();
+        }
+    } 
 }
 </script>
