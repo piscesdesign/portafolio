@@ -1,5 +1,5 @@
 <template>
-    <footer class="w-100 bg-primary">
+    <footer class="w-100 bg-tertiary">
         <br><br><br>
     </footer>
 </template>

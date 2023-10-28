@@ -12,6 +12,6 @@ git init
 git remote add origin git@github.com:piscesdesign/portafolio.git
 git branch -M gh-pages
 git add .
-git commit -m 'feat: My first feature'
+git commit -m 'deploying'
 git push -u origin gh-pages
 cd -

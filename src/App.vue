@@ -6,8 +6,19 @@
     mode="out-in">
       <router-view></router-view>  
     </transition>
+    <OffCanvas></OffCanvas>
   </div>
 </template>
+
+<script>
+import OffCanvas from '@/components/OffCanvas.vue';
+
+export default {
+  components: {
+    OffCanvas
+}
+}
+</script>
 
 <style lang="scss">
   
