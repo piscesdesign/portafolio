@@ -3,7 +3,7 @@
         <div class="container">
             <div class="float-end">
                 <router-link to="/">
-                    <img src="@/assets/images/go-home.png">
+                    <img src="@/assets/images/go-home.png" class="h-auto" style="max-width: 60px;">
                 </router-link>
             </div>
         </div>

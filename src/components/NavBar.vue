@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-3" :class="[isHome ? 'bg-tertiary' : 'bg-white']">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-3" :class="[isHome ? 'd-none d-lg-block' : 'bg-white']">
         <div class="container">
             <button type="button" class="btn btn-link ms-auto d-block d-lg-none" :class="[isHome ? 'text-white' : 'text-tertiary']" @click="open()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
@@ -8,19 +8,19 @@
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-3" style="max-width: 130px;">
                         <router-link class="mx-3" to="/acerca">
                             <img src="@/assets/images/acerca-home.png" class="img-fluid" v-if="isHome">
                             <img src="@/assets/images/acerca.png" class="img-fluid" v-else>
                         </router-link>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-3" style="max-width: 130px;">
                         <router-link class="mx-3" to="/proyectos">
                             <img src="@/assets/images/proyectos-home.png" class="img-fluid" v-if="isHome">
                             <img src="@/assets/images/proyectos.png" class="img-fluid" v-else>
                         </router-link>
                     </li>
-                    <li class="nav-item mx-2">
+                    <li class="nav-item mx-3" style="max-width: 130px;">
                         <router-link class="mx-3" to="/contacto">
                             <img src="@/assets/images/contacto-home.png" class="img-fluid" v-if="isHome">
                             <img src="@/assets/images/contacto.png" class="img-fluid" v-else>
