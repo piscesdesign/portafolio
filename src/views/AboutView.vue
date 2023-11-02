@@ -4,11 +4,6 @@
     <div style="min-height: 80px;"></div>
     <div class="bg-white min-vh-100">
       <div class="container">
-        <div class="row d-none">
-          <div class="col-12">
-
-          </div>
-        </div>
         <div class="row" id="medium">
           <div class="col-12 col-md-8 h-100 d-flex align-items-end flex-column">
             <div class="w-100 my-auto">

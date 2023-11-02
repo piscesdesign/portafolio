@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-3" :class="[isHome ? 'd-none d-lg-block' : 'bg-white']">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-3" :class="[isHome ? 'd-none d-lg-block' : 'bg-white border-bottom']">
         <div class="container">
-            <button type="button" class="btn btn-link ms-auto d-block d-lg-none" :class="[isHome ? 'text-white' : 'text-tertiary']" @click="open()">
+            <button type="button" class="btn btn-link ms-auto d-block d-lg-none" :class="[isHome ? 'text-white' : 'text-primary']" @click="open()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
                     <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
                 </svg>
@@ -11,19 +11,19 @@
                     <li class="nav-item mx-3" style="max-width: 130px;">
                         <router-link class="mx-3" to="/acerca">
                             <img src="@/assets/images/acerca-home.png" class="img-fluid" v-if="isHome">
-                            <img src="@/assets/images/acerca.png" class="img-fluid" v-else>
+                            <img src="@/assets/images/acerca-hover.png" class="img-fluid" v-else>
                         </router-link>
                     </li>
                     <li class="nav-item mx-3" style="max-width: 130px;">
                         <router-link class="mx-3" to="/proyectos">
                             <img src="@/assets/images/proyectos-home.png" class="img-fluid" v-if="isHome">
-                            <img src="@/assets/images/proyectos.png" class="img-fluid" v-else>
+                            <img src="@/assets/images/proyectos-hover.png" class="img-fluid" v-else>
                         </router-link>
                     </li>
                     <li class="nav-item mx-3" style="max-width: 130px;">
                         <router-link class="mx-3" to="/contacto">
                             <img src="@/assets/images/contacto-home.png" class="img-fluid" v-if="isHome">
-                            <img src="@/assets/images/contacto.png" class="img-fluid" v-else>
+                            <img src="@/assets/images/contacto-hover.png" class="img-fluid" v-else>
                         </router-link>
                     </li>
                 </ul>

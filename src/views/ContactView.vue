@@ -2,11 +2,29 @@
   <div>
     <NavBar :isHome="false"></NavBar>
     <div style="min-height: 80px;"></div>
-    <div class="bg-white vh-100">
+    <div class="bg-white pb-3">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-
+        <div class="row justify-content-end mb-3">
+          <div class="col-12 col-lg-10">
+            <img src="@/assets/images/header-contacto.png" class="img-fluid">
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-12 col-md-6 col-lg-4 bg-primary rounded-4">
+            <form action="" class="p-3">
+              <div class="mb-3">
+                <label class="form-label text-white">Nombre:</label>
+                <input type="text" class="form-control bg-transparent rounded-0 border-0 border-bottom text-white">
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-white">Email:</label>
+                <input type="email" class="form-control bg-transparent rounded-0 border-0 border-bottom text-white">
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-white">Mensaje:</label>
+                <textarea class="form-control bg-transparent rounded-0 border-0 border-bottom text-white"></textarea>
+              </div>
+            </form>
           </div>
         </div>
       </div>

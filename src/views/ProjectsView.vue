@@ -4,8 +4,8 @@
     <div style="min-height: 80px;"></div>
     <div class="bg-white mb-4">
       <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 d-flex justify-content-center">
             <img src="@/assets/images/proyectos-title.png" class="img-fluid">
           </div>
         </div>
@@ -41,7 +41,7 @@
   import Footer from '@/components/Footer.vue';
   
   export default {
-    name: 'ContactView',
+    name: 'ProjectsView',
     components: {
       NavBar,
       Redirect,
