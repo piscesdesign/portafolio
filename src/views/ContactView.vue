@@ -9,8 +9,13 @@
             <img src="@/assets/images/header-contacto.png" class="img-fluid">
           </div>
         </div>
+        <div class="row justify-content-start mb-3">
+          <div class="col-12 col-md-6 p-4">
+            <img src="@/assets/images/contacto-title.png" class="img-fluid">
+          </div>
+        </div>
         <div class="row justify-content-center mb-3">
-          <div class="col-12 col-md-6 col-lg-4 bg-primary rounded-4">
+          <div class="col-12 col-md-6 col-lg-5 bg-primary rounded-4">
             <form action="" class="p-3">
               <div class="mb-3">
                 <label class="form-label text-white">Nombre:</label>
@@ -23,6 +28,9 @@
               <div class="mb-3">
                 <label class="form-label text-white">Mensaje:</label>
                 <textarea class="form-control bg-transparent rounded-0 border-0 border-bottom text-white"></textarea>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-light text-primary w-25">Enviar</button>
               </div>
             </form>
           </div>
