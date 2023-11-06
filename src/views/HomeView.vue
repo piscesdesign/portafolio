@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-tertiary">
-    <NavBar :isHome="true"></NavBar>
+  <div class="bg-tertiary min-vh-100">
+    <NavBar :isHome="true" :bg="'bg-primary'"></NavBar>
     <div class="bg-primary">
       <div class="container d-flex align-items-end flex-column" style="min-height: 90vh;">
         <div style="min-height: 80px;"></div>

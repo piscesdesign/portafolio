@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="overflow-x: hidden;">
+  <div id="app" class="overflow-hidden">
     <transition 
     enter-active-class="animate__animated animate__fadeInRight"
     leave-active-class="animate__animated animate__fadeOutLeft"
@@ -35,7 +35,8 @@ $secondary: #f54358;
 // 4. Include any default map overrides here
 // Create your own map
 $theme-colors: map-merge($theme-colors, (
-  "tertiary": #fb4e4e
+  "tertiary": #fb4e4e,
+  "gray": #cccccc
 ));
 
 $position-values: map-merge($position-values, (

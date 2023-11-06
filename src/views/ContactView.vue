@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar :isHome="false"></NavBar>
+    <NavBar :isHome="false" :bg="'bg-white'"></NavBar>
     <div style="min-height: 80px;"></div>
     <div class="bg-white pb-3">
       <div class="container">
