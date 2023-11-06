@@ -1,12 +1,8 @@
 <template>
-    <div class="w-100 fixed-bottom mb-5">
-        <div class="container">
-            <div class="float-end">
-                <router-link to="/">
-                    <img src="@/assets/images/go-home.png" class="h-auto" style="max-width: 60px;">
-                </router-link>
-            </div>
-        </div>
+    <div class="fixed-bottom start-90 mb-5" style="max-width: 60px;">
+        <router-link to="/">
+            <img src="@/assets/images/go-home.png" class="img-fluid">
+        </router-link>
     </div>
 </template>
 
