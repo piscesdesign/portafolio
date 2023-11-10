@@ -3,7 +3,7 @@
       <NavBar :isHome="false" :bg="'bg-tertiary border-tertiary'" :tx="'text-white'"></NavBar>
       <div class="bg-tertiary">
         <div style="min-height: 80px;"></div>
-        <div class="container-fluid">
+        <div class="container-fluid pb-4">
               <div class="row justify-content-center">
                 <div class="col-12">
                   <img src="@/assets/projects/p-singular-title.png" class="img-fluid">

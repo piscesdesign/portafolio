@@ -6,6 +6,8 @@ import ProjectsView from '../views/ProjectsView.vue'
 import MainView from '../views/projects/MainView.vue'
 import SingularView from '../views/projects/SingularView.vue'
 import FlowersView from '../views/projects/FlowersView.vue'
+import BeauteView from '../views/projects/BeauteView.vue'
+import ConvictView from '../views/projects/ConvictView.vue'
 import ContactView from '../views/ContactView.vue'
 import Error404View from '../views/Error404View.vue'
 
@@ -41,6 +43,16 @@ const routes = [
         path: 'wild-flower',
         name: 'flowers',
         component: FlowersView
+      },
+      {
+        path: 'convict-history',
+        name: 'convict',
+        component: ConvictView
+      },
+      {
+        path: 'beaute-volcanique',
+        name: 'beaute',
+        component: BeauteView
       }
     ]
   },

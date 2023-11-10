@@ -33,16 +33,25 @@
       </div>
     </div>
     <div class="bg-tertiary">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-between py-4 px-2">
           <div class="col-8 col-sm-6 col-md-7 col-lg-6 position-relative">
             <img src="@/assets/images/footer-home.png" class="img-fluid position-absolute top-0 start-50 translate-middle" style="margin-top: -30px;">
           </div>
-          <div class="col-4 col-md-3 col-lg-2">
-              <img src="@/assets/images/media.png" class="img-fluid">
+          <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center mt-3">
+            <a href="#" style="width: 20%;">
+                <img src="@/assets/images/gmail.png" class="img-fluid">
+            </a>
+            <a href="https://www.instagram.com/bypisces_design/?igshid=bmhsNzNxOGR6a2Y4" class="mx-4" style="width: 18%;">
+                <img src="@/assets/images/instagram.png" class="img-fluid">
+            </a>
+            <a href="https://www.linkedin.com/in/nataly-mej%C3%ADa-34940726b/" style="width: 18%;">
+                <img src="@/assets/images/linkedin.png" class="img-fluid">
+            </a>
           </div>
         </div>
       </div>
+      <br>
     </div>
   </div>
 </template>
