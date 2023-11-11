@@ -94,20 +94,15 @@ $position-values: map-merge($position-values, (
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 @font-face {
-   font-family: hatolie;
-   src: url('~@/assets/fonts/hatolie/Hatolie.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'century schoolbook';
   src: url('~@/assets/fonts/century_schoolbook/Century_schoolbook.ttf') format('truetype');
 }
 
 label.form-label, button[type=submit] {
-  font-family: hatolie !important;
+  font-family: 'century schoolbook' !important;
 }
 
 p {
-  font-family: 'century schoolbook';
+  font-family: 'century schoolbook' !important;
 }
 </style>

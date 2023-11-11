@@ -14,10 +14,10 @@
                   <div class="col-12 main-text">
                     <div class="row justify-content-center">
                       <div class="col-7 col-md-10 col-lg-12">
-                        <p class="text-primary">El proyecto “Wild flower in the mind” se baso en presentar una colección que representa el empoderamiento de la mujer sin necesidad de abandonar los estereotipos desde hace décadas, utilizando así tonalidades rosas que destacan con un estampado miniminalista y armonioso. Con un estilo de temporada de primavera-verano, en el que la mujer le encanta sentirse libre y cómoda con las prendas que lleva durante esta época del año, conectando así con las mujeres para que se sientan seguras ante la sociedad que estigmatiza el poder de una mujer en la actualidad.</p>
+                        <p class="text-primary">eauté volcanique sereine, es la inspiración de este proyecto para representar el objetivo de la marca, que es ofrecer un producto hidrantante, el cual le genere frescura en el rostro al consumidor para sentir una serenidad absoluta con su piel, y que a su vez se sienta satisfecha y bella con los resultados satisfactorios del producto. Además, el empaque esta diseñado para representar la relación del producto con el consumidor.</p>
                       </div>
                       <div class="col-5 d-md-none">
-                        <img src="@/assets/projects/p-beaute-2.png" class="img-fluid">
+                        <img src="@/assets/projects/p-beaute-2-mobile.png" class="img-fluid">
                       </div>
                       <div class="col-12 mt-3">
                         <img src="@/assets/projects/p-beaute-1.png" class="img-fluid px-1 px-lg-3">
