@@ -14,7 +14,7 @@
                   <div class="col-12 main-text">
                     <div class="row justify-content-center">
                       <div class="col-7 col-md-10 col-lg-12">
-                        <p class="text-primary">eauté volcanique sereine, es la inspiración de este proyecto para representar el objetivo de la marca, que es ofrecer un producto hidrantante, el cual le genere frescura en el rostro al consumidor para sentir una serenidad absoluta con su piel, y que a su vez se sienta satisfecha y bella con los resultados satisfactorios del producto. Además, el empaque esta diseñado para representar la relación del producto con el consumidor.</p>
+                        <p class="text-primary">Beauté volcanique sereine, es la inspiración de este proyecto para representar el objetivo de la marca, que es ofrecer un producto hidrantante, el cual le genere frescura en el rostro al consumidor para sentir una serenidad absoluta con su piel, y que a su vez se sienta satisfecha y bella con los resultados satisfactorios del producto. Además, el empaque esta diseñado para representar la relación del producto con el consumidor.</p>
                       </div>
                       <div class="col-5 d-md-none">
                         <img src="@/assets/projects/p-beaute-2-mobile.png" class="img-fluid">
