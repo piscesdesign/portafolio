@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="offcanvas offcanvas-end" :class="[!isHome ? 'bg-primary' : '']" id="offcanvas">
+        <div class="offcanvas offcanvas-end" :class="[!isHome ? 'bg-tertiary' : '']" id="offcanvas">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close ms-auto"  aria-label="Close" @click="close()"></button>
             </div>
@@ -10,19 +10,19 @@
                         <li class="mb-2">
                             <router-link to="/acerca" class="d-flex justify-content-center p-3">
                                 <img src="@/assets/images/acerca-home.png" class="img-fluid" v-if="isHome">
-                                <img src="@/assets/images/acerca-hover.png" class="img-fluid" v-else>
+                                <img src="@/assets/images/acerca.png" class="img-fluid" v-else>
                             </router-link>
                         </li>
                         <li class="mb-2">
                             <router-link to="/proyectos" class="d-flex justify-content-center p-3">
                                 <img src="@/assets/images/proyectos-home.png" class="img-fluid" v-if="isHome">
-                                <img src="@/assets/images/proyectos-hover.png" class="img-fluid" v-else>
+                                <img src="@/assets/images/proyectos.png" class="img-fluid" v-else>
                             </router-link>
                         </li>
                         <li class="mb-2">
                             <router-link to="/contacto" class="d-flex justify-content-center p-3">
                                 <img src="@/assets/images/contacto-home.png" class="img-fluid" v-if="isHome">
-                                <img src="@/assets/images/contacto-hover.png" class="img-fluid" v-else>
+                                <img src="@/assets/images/contacto.png" class="img-fluid" v-else>
                             </router-link>
                         </li>
                     </ul>
@@ -63,7 +63,7 @@ export default {
         }
     },
     watch:{
-        $route(to, from){
+        $route(to, from) {
             this.close();
             this.isHome = to.name == 'home';
         }

@@ -18,19 +18,19 @@
           <div class="col-10 col-md-6 col-lg-5 bg-primary rounded-4">
             <form action="" class="p-3">
               <div class="mb-3">
-                <label class="form-label text-white">Nombre:</label>
+                <label class="form-label text-white h2">Nombre:</label>
                 <input type="text" class="form-control bg-transparent rounded-0 border-0 border-bottom text-white">
               </div>
               <div class="mb-3">
-                <label class="form-label text-white">Email:</label>
+                <label class="form-label text-white h2">Email:</label>
                 <input type="email" class="form-control bg-transparent rounded-0 border-0 border-bottom text-white">
               </div>
               <div class="mb-3">
-                <label class="form-label text-white">Mensaje:</label>
+                <label class="form-label text-white h2">Mensaje:</label>
                 <textarea class="form-control bg-transparent rounded-0 border-0 border-bottom text-white"></textarea>
               </div>
               <div class="mb-3">
-                <button type="submit" class="btn btn-light text-primary w-25">Enviar</button>
+                <button type="submit" class="btn btn-light text-primary w-25"><h2 class="m-0">Enviar</h2></button>
               </div>
             </form>
           </div>

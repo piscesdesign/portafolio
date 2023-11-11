@@ -17,12 +17,18 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: 'Inicio'
+    }
   },
   {
     path: '/acerca',
     name: 'about',
-    component: AboutView
+    component: AboutView,
+    meta: {
+      title: 'Acerca de mí'
+    }
   },
   {
     path: '/proyectos',
@@ -32,34 +38,52 @@ const routes = [
       {
         path: '',
         name: 'main',
-        component: MainView
+        component: MainView,
+        meta: {
+          title: 'Proyectos'
+        }
       },
       {
         path: 'singular-euforia',
         name: 'singular',
-        component: SingularView
+        component: SingularView,
+        meta: {
+          title: 'Singular Euforia'
+        }
       },
       {
         path: 'wild-flower',
         name: 'flowers',
-        component: FlowersView
+        component: FlowersView,
+        meta: {
+          title: 'Wild Flower'
+        }
       },
       {
         path: 'convict-history',
         name: 'convict',
-        component: ConvictView
+        component: ConvictView,
+        meta: {
+          title: 'Convict History'
+        }
       },
       {
         path: 'beaute-volcanique',
         name: 'beaute',
-        component: BeauteView
+        component: BeauteView,
+        meta: {
+          title: 'Beaute Volcanique'
+        }
       }
     ]
   },
   {
     path: '/contacto',
     name: 'contact',
-    component: ContactView
+    component: ContactView,
+    meta: {
+      title: 'Contacto'
+    }
   },
   {
     path: '*',
@@ -73,5 +97,11 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  setTimeout(() => document.title = 'Pisces | ' + (to.meta?.title || '404'), 800);
+  next();
+  return;
+});
 
 export default router

@@ -31,8 +31,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-1 d-none d-md-block"></div>
-            <div class="col-3 col-md-3 col-lg-2 p-md-4 position-relative d-none d-md-block">
+            <div class="col-3 col-md-3 col-lg-3 p-md-4 position-relative d-none d-md-block">
               <img src="@/assets/projects/p-singular-2.png" class="img-fluid position-absolute top-30 start-80 translate-middle">
             </div>
           </div>

@@ -2,7 +2,7 @@
     <div>
       <NavBar :isHome="false" :bg="'bg-white'"></NavBar>
       <div style="min-height: 80px;"></div>
-      <div class="bg-white mb-4">
+      <div class="bg-white min-vh-100 mb-4">
         <div class="container-fluid">
           <div class="row justify-content-center min-h-title">
             <div class="col-12 position-relative min-h-title">

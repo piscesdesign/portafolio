@@ -69,11 +69,11 @@ $position-values: map-merge($position-values, (
 //@import "../node_modules/bootstrap/scss/button-group";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/card";
+//@import "../node_modules/bootstrap/scss/card";
 //@import "../node_modules/bootstrap/scss/accordion";
 //@import "../node_modules/bootstrap/scss/breadcrumb";
 //@import "../node_modules/bootstrap/scss/pagination";
-@import "../node_modules/bootstrap/scss/badge";
+//@import "../node_modules/bootstrap/scss/badge";
 //@import "../node_modules/bootstrap/scss/alert";
 //@import "../node_modules/bootstrap/scss/progress";
 //@import "../node_modules/bootstrap/scss/list-group";
@@ -82,7 +82,7 @@ $position-values: map-merge($position-values, (
 @import "../node_modules/bootstrap/scss/modal";
 //@import "../node_modules/bootstrap/scss/tooltip";
 //@import "../node_modules/bootstrap/scss/popover";
-@import "../node_modules/bootstrap/scss/carousel";
+//@import "../node_modules/bootstrap/scss/carousel";
 //@import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/offcanvas";
 @import "../node_modules/bootstrap/scss/placeholders";
@@ -92,4 +92,22 @@ $position-values: map-merge($position-values, (
 
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
+
+@font-face {
+   font-family: hatolie;
+   src: url('~@/assets/fonts/hatolie/Hatolie.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'century schoolbook';
+  src: url('~@/assets/fonts/century_schoolbook/Century_schoolbook.ttf') format('truetype');
+}
+
+label.form-label, button[type=submit] {
+  font-family: hatolie !important;
+}
+
+p {
+  font-family: 'century schoolbook';
+}
 </style>

@@ -34,11 +34,11 @@
     </div>
     <div class="bg-tertiary">
       <div class="container-fluid">
-        <div class="row justify-content-between py-4 px-2">
+        <div class="row justify-content-between py-2 py-lg-4 px-2">
           <div class="col-8 col-sm-6 col-md-7 col-lg-6 position-relative">
             <img src="@/assets/images/footer-home.png" class="img-fluid position-absolute top-0 start-50 translate-middle" style="margin-top: -30px;">
           </div>
-          <div class="col-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center mt-3">
+          <div class="col-4 col-md-3 col-lg-2 col-xl-1 d-flex justify-content-center align-items-center mt-3">
             <a href="#" style="width: 20%;">
                 <img src="@/assets/images/gmail.png" class="img-fluid">
             </a>
