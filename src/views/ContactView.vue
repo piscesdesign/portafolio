@@ -9,13 +9,13 @@
             <img src="@/assets/images/header-contacto.png" class="img-fluid">
           </div>
         </div>
-        <div class="row justify-content-start mb-3">
+        <div class="row justify-content-center justify-content-md-start mb-3">
           <div class="col-12 col-md-6 p-4">
             <img src="@/assets/images/contacto-title.png" class="img-fluid">
           </div>
         </div>
         <div class="row justify-content-center mb-3">
-          <div class="col-12 col-md-6 col-lg-5 bg-primary rounded-4">
+          <div class="col-10 col-md-6 col-lg-5 bg-primary rounded-4">
             <form action="" class="p-3">
               <div class="mb-3">
                 <label class="form-label text-white">Nombre:</label>
