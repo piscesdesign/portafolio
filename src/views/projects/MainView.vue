@@ -1,11 +1,11 @@
 <template>
     <div>
       <NavBar :isHome="false" :bg="'bg-white'"></NavBar>
-      <div style="min-height: 80px;"></div>
+      <div style="min-height: 100px;"></div>
       <div class="bg-white min-vh-100 mb-4">
         <div class="container-fluid">
           <div class="row justify-content-center min-h-title">
-            <div class="col-12 position-relative min-h-title">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 position-relative min-h-title">
               <img src="@/assets/images/proyectos-title.png" class="img-fluid p-2 position-absolute top-0 start-50 translate-middle-x">
             </div>
           </div>

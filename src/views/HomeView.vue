@@ -3,7 +3,7 @@
     <NavBar :isHome="true" :bg="'bg-primary'"></NavBar>
     <div class="bg-primary">
       <div class="container d-flex align-items-end flex-column" style="min-height: 90vh;">
-        <div style="min-height: 80px;"></div>
+        <div style="min-height: 100px;"></div>
         <div class="row justify-content-center mb-5 mb-lg-0">
           <div class="col-8 col-md-6 col-lg-5">
             <img src="@/assets/images/home-logo.png" class="img-fluid ms-2">

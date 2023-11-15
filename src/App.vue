@@ -36,7 +36,7 @@ $secondary: #f54358;
 // Create your own map
 $theme-colors: map-merge($theme-colors, (
   "tertiary": #fb4e4e,
-  "gray": #cccccc
+  "gray": #f2f2f2
 ));
 
 $position-values: map-merge($position-values, (

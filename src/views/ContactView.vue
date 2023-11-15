@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar :isHome="false" :bg="'bg-white'"></NavBar>
-    <div style="min-height: 80px;"></div>
+    <div style="min-height: 100px;"></div>
     <div class="bg-white pb-3">
       <div class="container">
         <div class="row justify-content-end mb-3">

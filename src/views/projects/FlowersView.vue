@@ -1,15 +1,17 @@
 <template>
     <div>
-      <NavBar :isHome="false" :bg="'bg-primary border-primary'" :tx="'text-white'"></NavBar>
-      <div class="bg-primary">
-        <div style="min-height: 80px;"></div>
+      <NavBar :isHome="false" :bg="'bg-white'"></NavBar>
+      <div class="bg-white">
+        <div style="min-height: 100px;"></div>
         <div class="container-fluid pb-4">
-          <div class="row justify-content-center">
-            <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
               <img src="@/assets/projects/p-flowers-title.png" class="img-fluid">
             </div>
+          </div>
+          <div class="row justify-content-center">
             <div class="col-12 col-sm-10 col-md-6">
-              <div class="p-4 bg-white rounded-5 mt-4">
+              <div class="p-4 bg-gray rounded-5 mt-4">
                 <div class="row">
                   <div class="col-12 col-lg-9 main-text">
                     <div class="row justify-content-center">
